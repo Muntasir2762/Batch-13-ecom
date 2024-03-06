@@ -1,7 +1,7 @@
 <header class="header-section">
     <div class="container">
         <div class="header-top-wrapper">
-            <a href="index.html" class="brand-logo-outer">
+            <a href="{{url('/')}}" class="brand-logo-outer">
                 <img src="{{asset('frontend/assets/images/logo.png')}}" alt="Logo">
             </a>
             <div class="search-form-outer">
