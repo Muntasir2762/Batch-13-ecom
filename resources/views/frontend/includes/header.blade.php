@@ -25,11 +25,11 @@
                     <div class="cart-items-wrapper">
                         <div class="cart-items-outer">
                             <div class="cart-item-outer">
-                                <a href="#" class="cart-product-image">
+                                <a href="{{url('/product/view-cart')}}" class="cart-product-image">
                                     <img src="{{asset('frontend/assets/images/logo.png')}}" alt="product">
                                 </a>
                                 <div class="cart-product-name-price">
-                                    <a href="#" class="product-name">
+                                    <a href="{{url('/product/view-cart')}}" class="product-name">
                                         Test Product
                                     </a>
                                     <span class="product-price">
@@ -50,8 +50,8 @@
                                 </h4>
                             </div>
                             <div class="shopping-cart-button">
-                                <a href="view-products.html" class="view-cart-link">View cart</a>
-                                <a href="checkout.html" class="checkout-link">Checkout</a>
+                                <a href="{{url('/product/view-cart')}}" class="view-cart-link">View cart</a>
+                                <a href="{{url('/product/checkout')}}" class="checkout-link">Checkout</a>
                             </div>
                         </div>
                     </div>
@@ -93,18 +93,18 @@
                 <div class="header__dynamic-page-wrapper">
                     <ul class="dynamic-page-list">
                         <li class="dynamic-page-list-item">
-                            <a href="index.html" class="dynamic-page-list-item-link">
+                            <a href="{{url('/')}}" class="dynamic-page-list-item-link">
                                 Home
                             </a>
                         </li>
                         <li class="dynamic-page-list-item">
-                            <a href="shop.html" class="dynamic-page-list-item-link">
+                            <a href="{{url('/shop-products')}}" class="dynamic-page-list-item-link">
                                 Shop
                             </a>
                         </li>
                         </li>
                         <li class="dynamic-page-list-item">
-                            <a href="return-process.html" class="dynamic-page-list-item-link">
+                            <a href="{{url('/return-products')}}" class="dynamic-page-list-item-link">
                                 Return Process
                             </a>
                         </li>

@@ -21,4 +21,8 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class, 'index']);
 Route::get('/product/details', [HomeController::class, 'productDetails']);
+Route::get('/product/view-cart', [HomeController::class, 'viewCart']);
+Route::get('/product/checkout', [HomeController::class, 'productCheckout']);
+Route::get('/shop-products', [HomeController::class, 'shopProduct']);
+Route::get('/return-products', [HomeController::class, 'returnProduct']);
 
