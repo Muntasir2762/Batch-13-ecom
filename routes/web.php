@@ -26,3 +26,7 @@ Route::get('/product/checkout', [HomeController::class, 'productCheckout']);
 Route::get('/shop-products', [HomeController::class, 'shopProduct']);
 Route::get('/return-products', [HomeController::class, 'returnProduct']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
