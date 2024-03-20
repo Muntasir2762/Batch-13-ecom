@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -29,4 +30,7 @@ Route::get('/return-products', [HomeController::class, 'returnProduct']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin/login', [AdminController::class, 'login']);
+Route::post('/admin/login-access', [AdminController::class, 'loginCheck']);
+
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
